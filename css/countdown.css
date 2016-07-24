@@ -1,0 +1,90 @@
+body{
+  background: white;
+  overflow-x: hidden;
+}
+*{
+  font-family: 'Lato';
+}
+.countdown-clock{
+  position: relative!important;
+  top: 15vw;
+  left: 25vw;
+}
+.flip-clock-label{
+  color: black!important;
+}
+nav{
+  background-color: #00ccbb!important;
+}
+@media only screen and (min-device-width: 300px) and (max-device-width: 480px){
+
+  nav{
+    width: 120vw!important;
+  }
+  nav *{
+    font-size: 32px!important;
+  }
+  .countdown-clock{
+    position: relative!important;
+    top: 35vw;
+    left: 28vw;
+  }
+  .flip-clock-label{
+    font-size: 32px!important;
+  }
+}
+@media only screen and (min-device-width: 767px) and (max-device-width: 1023px){
+  nav{
+    min-width: 120vw!important;
+  }
+  nav *{
+    font-size: 32px!important;
+  }
+  .countdown-clock{
+    position: relative!important;
+    top: 25vw;
+    left: 26vw;
+  }
+  .flip-clock-label{
+    font-size: 32px!important;
+  }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1350px){
+  nav{
+    min-width: 120vw!important;
+  }
+  nav *{
+    font-size: 15px!important;
+  }
+  nav .brand-logo{
+    margin-left: 2%!important;
+    font-size: 23px!important;
+  }
+  .countdown-clock{
+    position: relative;
+    left: 33vw;
+  }
+  .flip-clock-label{
+    font-size: 18px!important;
+  }
+}
+@media only screen and (min-device-width: 1440px) and (max-device-width: 1600px){
+  nav{
+    min-width: 124vw!important;
+  }
+  nav *{
+    font-size: 15px!important;
+  }
+  nav .brand-logo{
+    margin-left: 2%!important;
+    font-size: 23px!important;
+  }
+  .countdown-clock{
+    position: relative!important;
+    top: 15vw;
+    left: 40vw;
+  }
+  .flip-clock-label{
+    font-size: 15px!important;
+  }
+}
