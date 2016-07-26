@@ -48,6 +48,17 @@ nav{
     font-size: 32px!important;
   }
 }
+@media only screen and (min-device-width: 500px) and (max-device-width: 766px){
+  nav{
+    min-width: 120vw!important;
+    min-height: 80px!important;
+  }
+  .countdown-clock{
+    position: relative!important;
+    top: 15vw;
+    left: 20vw;
+  }
+}
 @media only screen and (min-device-width: 767px) and (max-device-width: 1023px){
   nav{
     min-width: 120vw!important;
