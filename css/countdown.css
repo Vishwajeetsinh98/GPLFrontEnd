@@ -48,7 +48,7 @@ nav{
     font-size: 32px!important;
   }
 }
-@media only screen and (min-device-width: 500px) and (max-device-width: 766px){
+@media only screen and (min-device-width: 481px) and (max-device-width: 766px){
   nav{
     min-width: 120vw!important;
     min-height: 80px!important;
