@@ -20,9 +20,24 @@ nav{
 
   nav{
     width: 120vw!important;
+    min-height: 7vh;
+    padding-top: 1.5vh;
   }
   nav *{
     font-size: 32px!important;
+  }
+  nav .brand-logo
+  {
+    font-size: 60px !important;
+  }
+  nav #mobile-demo li a
+  {
+    font-size: 25px !important;
+  }
+  nav .material-icons
+  {
+    font-size: 60px !important;
+    margin-left: 15px;
   }
   .countdown-clock{
     position: relative!important;
@@ -39,6 +54,10 @@ nav{
   }
   nav *{
     font-size: 32px!important;
+  }
+  nav #mobile-demo li a
+  {
+    font-size: 28px !important;
   }
   .countdown-clock{
     position: relative!important;
@@ -86,5 +105,16 @@ nav{
   }
   .flip-clock-label{
     font-size: 15px!important;
+  }
+}
+@media(min-width:1900px)
+{
+  .flip-clock-wrapper
+  {
+    width: 80% !important;
+  }
+  .countdown-clock
+  {
+    margin-left: 150px !important;
   }
 }
