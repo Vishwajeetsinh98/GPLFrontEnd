@@ -1,0 +1,90 @@
+<!--
+  GraVITas Premier League <gravitaspremierleague@gmail.com>
+  Copyright (C) 2014  IEEE Computer Society - VIT Student Chapter <ieeecs@vit.ac.in>
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Interest | GPL</title>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"/>
+        <link type="text/css" rel="stylesheet" href="css/interest.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+
+        <script src="js/jquery.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-72985649-1', 'auto');ga('send', 'pageview');
+        </script>
+    </head>
+    <body id="interest">
+        <div class="row interest-images">
+          <div class="col s4 push-s2">
+              <a href="http://www.facebook.com/ieeecsvit" target="_blank">
+                  <img src="http://res.cloudinary.com/gpl/general/logo_nbg.png" class="">
+              </a>
+          </div>
+          <div class="col s4 push-s1">
+              <a href="http://www.facebook.com/gravitaspremierleague" target="_blank">
+                  <img src="http://res.cloudinary.com/gpl/general/gpllogo.png" style="width: 15%;margin-left: 5%">
+              </a>
+          </div>
+          <div class="col s3 pull-s1 offset-s1">
+              <a href="http://www.vitgravitas.com" target="_blank">
+                  <img src="http://res.cloudinary.com/gpl/general/gravitas_15.png" class="">
+              </a>
+          </div>
+        </div>
+        <div class="row interest-form-holder">
+          <div class="card col s10 m5 l5 push-s1 push-m3 push-l3 z-depth-3">
+            <h5 style="font-size: 150%" class="center">graVITas Premier League 2K16</h5>
+            <p class="center" style="font-size: 80%">Coming Soon! To keep yourself updated, fill the form!</p>
+            <form name="int" action="/interest" method="post">
+              <input type="hidden" name="_csrf" value="<%= csrfToken %>"/>
+              <div class="input-field">
+                <label for="team">Name:</label>
+                <input type="text" class="validate"name="name" required autofocus/>
+              </div>
+              <div class="input-field">
+                <label for="team">Registration Number:(VIT Students Only)</label>
+                <input type="text" id="team" class="validate" name="regno"
+                       pattern="1[2-6]\w{3}\d{4}|NA|"/>
+              </div>
+              <div class="input-field">
+                <label for="mob">Mobile:</label>
+                <input type="tel" id="mob" class="validate"name="phone"
+                       required pattern="\d{10}"/>
+              </div>
+              <div class="input-field">
+                <label for="email">Email:</label>
+                <input type="email" id="email" class="validate"
+                       name="email" required/>
+              </div>
+              <button type="submit" class="custom-submit">Submit!</button>
+            </form>
+          </div>
+        </div>
+    </body>
+</html>
